@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"SB_wedding_300x250_atlas_1", frames: [[426,345,418,76],[700,252,277,62],[373,0,325,343],[0,345,424,86],[0,0,371,316],[846,316,48,41],[700,0,300,250]]}
+		{name:"SB_wedding_300x250_atlas_1", frames: [[426,502,418,76],[602,345,277,62],[602,0,325,343],[0,502,424,86],[602,409,48,41],[0,0,600,500]]}
 ];
 
 
@@ -26,28 +26,28 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_19 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["SB_wedding_300x250_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_18 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["SB_wedding_300x250_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_17 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["SB_wedding_300x250_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_16 = function() {
+(lib.CachedBmp_1 = function() {
 	this.initialize(ss["SB_wedding_300x250_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
@@ -61,16 +61,9 @@ lib.ssMetadata = [
 
 
 
-(lib.logowhite2x_1 = function() {
-	this.initialize(ss["SB_wedding_300x250_atlas_1"]);
-	this.gotoAndStop(5);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.wedding_300x250 = function() {
 	this.initialize(ss["SB_wedding_300x250_atlas_1"]);
-	this.gotoAndStop(6);
+	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -103,7 +96,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// type
-	this.instance = new lib.CachedBmp_19();
+	this.instance = new lib.CachedBmp_4();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -120,28 +113,6 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.TAG, new cjs.Rectangle(0,0,209,38), null);
 
 
-(lib.SB_LOGO = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_1
-	this.instance = new lib.logowhite2x();
-	this.instance.setTransform(-185.5,-158);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.SB_LOGO, new cjs.Rectangle(-185.5,-158,371,316), null);
-
-
 (lib.LEGAL = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -154,7 +125,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_18();
+	this.instance = new lib.CachedBmp_3();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -176,7 +147,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_17();
+	this.instance = new lib.CachedBmp_2();
 	this.instance.setTransform(0,0,0.4663,0.4663);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -198,7 +169,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_16();
+	this.instance = new lib.CachedBmp_1();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -266,33 +237,27 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(342));
 
 	// logo bmp
-	this.instance_3 = new lib.logowhite2x_1();
+	this.instance_3 = new lib.logowhite2x();
 	this.instance_3.setTransform(240,167);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(342));
 
-	// LOGO
-	this.instance_4 = new lib.SB_LOGO();
-	this.instance_4.setTransform(264.45,187.3,0.129,0.129,0,0,0,0.8,0.4);
-	this.instance_4.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,10);
+	// LEGAL
+	this.instance_4 = new lib.LEGAL();
+	this.instance_4.setTransform(262.55,225.3,1,1,0,0,0,102.9,11);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(342));
 
-	// LEGAL
-	this.instance_5 = new lib.LEGAL();
-	this.instance_5.setTransform(262.55,225.3,1,1,0,0,0,102.9,11);
+	// BKGD
+	this.instance_5 = new lib.wedding_300x250();
+	this.instance_5.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(342));
-
-	// BKGD
-	this.instance_6 = new lib.wedding_300x250();
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(342));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(150,125,153.5,125);
+p.nominalBounds = new cjs.Rectangle(150,125,150,125);
 // library properties:
 lib.properties = {
 	id: '0957C5EC3B874C629166840920B09671',
@@ -302,7 +267,7 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/SB_wedding_300x250_atlas_1.png?1663112622425", id:"SB_wedding_300x250_atlas_1"}
+		{src:"images/SB_wedding_300x250_atlas_1.png?1663114734996", id:"SB_wedding_300x250_atlas_1"}
 	],
 	preloads: []
 };
