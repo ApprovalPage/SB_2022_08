@@ -9,6 +9,7 @@ lib.ssMetadata = [
 
 (lib.AnMovieClip = function(){
 	this.actionFrames = [];
+	this.ignorePause = false;
 	this.gotoAndPlay = function(positionOrLabel){
 		cjs.MovieClip.prototype.gotoAndPlay.call(this,positionOrLabel);
 	}
@@ -26,14 +27,14 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_43 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["SB_climb_320x50_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_42 = function() {
+(lib.CachedBmp_1 = function() {
 	this.initialize(ss["SB_climb_320x50_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -75,7 +76,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// type
-	this.instance = new lib.CachedBmp_43();
+	this.instance = new lib.CachedBmp_2();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -104,14 +105,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_42();
-	this.instance.setTransform(-99.65,0,0.5,0.5);
+	this.instance = new lib.CachedBmp_1();
+	this.instance.setTransform(-132.8,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(-99.6,0,265.5,51.5), null);
+}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(-132.8,0,265.5,51.5), null);
 
 
 // stage content:
@@ -161,7 +162,7 @@ if (reversed == null) { reversed = false; }
 
 	// CTA
 	this.instance_1 = new lib.CTA();
-	this.instance_1.setTransform(178.75,45.7,0.7611,0.7611,0,0,0,99.7,25.9);
+	this.instance_1.setTransform(198.75,45.7,0.7611,0.7611,0,0,0,99.7,25.9);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
@@ -186,7 +187,7 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/SB_climb_320x50_atlas_1.png?1663371915460", id:"SB_climb_320x50_atlas_1"}
+		{src:"images/SB_climb_320x50_atlas_1.png?1663780133082", id:"SB_climb_320x50_atlas_1"}
 	],
 	preloads: []
 };
@@ -283,8 +284,23 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 an.handleSoundStreamOnTick = function(event) {
 	if(!event.paused){
 		var stageChild = stage.getChildAt(0);
-		if(!stageChild.paused){
+		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
+		}
+	}
+}
+an.handleFilterCache = function(event) {
+	if(!event.paused){
+		var target = event.target;
+		if(target){
+			if(target.filterCacheList){
+				for(var index = 0; index < target.filterCacheList.length ; index++){
+					var cacheInst = target.filterCacheList[index];
+					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
+						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
+					}
+				}
+			}
 		}
 	}
 }
