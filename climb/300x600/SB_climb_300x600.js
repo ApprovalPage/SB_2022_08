@@ -27,21 +27,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_18 = function() {
+(lib.CachedBmp_6 = function() {
 	this.initialize(ss["SB_climb_300x600_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_17 = function() {
+(lib.CachedBmp_5 = function() {
 	this.initialize(ss["SB_climb_300x600_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_16 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["SB_climb_300x600_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
@@ -90,7 +90,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// type
-	this.instance = new lib.CachedBmp_18();
+	this.instance = new lib.CachedBmp_6();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -148,7 +148,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_17();
+	this.instance = new lib.CachedBmp_5();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -170,7 +170,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_16();
+	this.instance = new lib.CachedBmp_4();
 	this.instance.setTransform(-147,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -267,7 +267,7 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/SB_climb_300x600_atlas_1.png?1663782309717", id:"SB_climb_300x600_atlas_1"}
+		{src:"images/SB_climb_300x600_atlas_1.png?1664209416225", id:"SB_climb_300x600_atlas_1"}
 	],
 	preloads: []
 };
