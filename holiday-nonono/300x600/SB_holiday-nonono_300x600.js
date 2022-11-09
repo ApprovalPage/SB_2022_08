@@ -927,8 +927,8 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/SB_holiday_nonono_300x600_atlas_P_1.png?1668020385941", id:"SB_holiday_nonono_300x600_atlas_P_1"},
-		{src:"images/SB_holiday_nonono_300x600_atlas_NP_1.jpg?1668020385941", id:"SB_holiday_nonono_300x600_atlas_NP_1"}
+		{src:"images/SB_holiday_nonono_300x600_atlas_P_1.png?1668038008605", id:"SB_holiday_nonono_300x600_atlas_P_1"},
+		{src:"images/SB_holiday_nonono_300x600_atlas_NP_1.jpg?1668038008605", id:"SB_holiday_nonono_300x600_atlas_NP_1"}
 	],
 	preloads: []
 };
