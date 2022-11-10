@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"SB_holiday_reuse_728x90_atlas_1", frames: [[900,305,431,92],[0,348,759,26],[0,182,898,164],[900,182,520,121],[0,0,1456,180],[1458,0,371,316]]}
+		{name:"SB_holiday_reuse_728x90_atlas_1", frames: [[900,305,431,92],[0,399,1438,26],[0,182,898,164],[900,182,543,121],[0,0,1456,180],[1458,0,371,316]]}
 ];
 
 
@@ -27,28 +27,28 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_70 = function() {
+(lib.CachedBmp_64 = function() {
 	this.initialize(ss["SB_holiday_reuse_728x90_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_69 = function() {
+(lib.CachedBmp_63 = function() {
 	this.initialize(ss["SB_holiday_reuse_728x90_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_68 = function() {
+(lib.CachedBmp_62 = function() {
 	this.initialize(ss["SB_holiday_reuse_728x90_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_67 = function() {
+(lib.CachedBmp_61 = function() {
 	this.initialize(ss["SB_holiday_reuse_728x90_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
@@ -97,7 +97,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// type
-	this.instance = new lib.CachedBmp_70();
+	this.instance = new lib.CachedBmp_64();
 	this.instance.setTransform(0,0,0.4103,0.4103);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -136,7 +136,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.SB_LOGO, new cjs.Rectangle(-185.5,-158,371,316), null);
 
 
-(lib.LEGAL = function(mode,startPosition,loop,reversed) {
+(lib.LEGALrate = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -148,14 +148,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_69();
+	this.instance = new lib.CachedBmp_63();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.LEGAL, new cjs.Rectangle(0,0,379.5,13), null);
+}).prototype = getMCSymbolPrototype(lib.LEGALrate, new cjs.Rectangle(0,0,719,13), null);
 
 
 (lib.HEAD = function(mode,startPosition,loop,reversed) {
@@ -170,7 +170,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_68();
+	this.instance = new lib.CachedBmp_62();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -192,14 +192,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_67();
+	this.instance = new lib.CachedBmp_61();
 	this.instance.setTransform(0,0,0.4276,0.4276);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(0,0,222.4,51.8), null);
+}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(0,0,232.2,51.8), null);
 
 
 // stage content:
@@ -266,8 +266,8 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(179).to({_off:false},0).to({y:44.1,alpha:1},10,cjs.Ease.quadOut).wait(2));
 
 	// LEGAL
-	this.instance_3 = new lib.LEGAL();
-	this.instance_3.setTransform(443.85,108.05,1,1,0,0,0,102.9,11);
+	this.instance_3 = new lib.LEGALrate();
+	this.instance_3.setTransform(109.9,108.05,1,1,0,0,0,102.9,11);
 	this.instance_3.alpha = 0;
 	this.instance_3._off = true;
 
@@ -298,7 +298,7 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/SB_holiday_reuse_728x90_atlas_1.png?1668031661449", id:"SB_holiday_reuse_728x90_atlas_1"}
+		{src:"images/SB_holiday_reuse_728x90_atlas_1.png?1668111166931", id:"SB_holiday_reuse_728x90_atlas_1"}
 	],
 	preloads: []
 };

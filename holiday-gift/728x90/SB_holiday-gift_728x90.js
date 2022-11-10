@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"SB_holiday_gift_728x90_atlas_1", frames: [[900,305,431,92],[0,320,759,26],[0,182,898,136],[900,182,520,121],[0,0,1456,180],[1458,0,371,316]]}
+		{name:"SB_holiday_gift_728x90_atlas_1", frames: [[900,305,431,92],[0,399,1438,26],[0,182,898,136],[900,182,543,121],[0,0,1456,180],[1458,0,371,316]]}
 ];
 
 
@@ -136,7 +136,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.SB_LOGO, new cjs.Rectangle(-185.5,-158,371,316), null);
 
 
-(lib.LEGAL = function(mode,startPosition,loop,reversed) {
+(lib.LEGALrate = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -155,7 +155,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.LEGAL, new cjs.Rectangle(0,0,379.5,13), null);
+}).prototype = getMCSymbolPrototype(lib.LEGALrate, new cjs.Rectangle(0,0,719,13), null);
 
 
 (lib.HEAD = function(mode,startPosition,loop,reversed) {
@@ -199,7 +199,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(0,0,222.4,51.8), null);
+}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(0,0,232.2,51.8), null);
 
 
 // stage content:
@@ -266,8 +266,8 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(179).to({_off:false},0).to({y:44.1,alpha:1},10,cjs.Ease.quadOut).wait(2));
 
 	// LEGAL
-	this.instance_3 = new lib.LEGAL();
-	this.instance_3.setTransform(443.85,108.05,1,1,0,0,0,102.9,11);
+	this.instance_3 = new lib.LEGALrate();
+	this.instance_3.setTransform(109.9,108.05,1,1,0,0,0,102.9,11);
 	this.instance_3.alpha = 0;
 	this.instance_3._off = true;
 
@@ -298,7 +298,7 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/SB_holiday_gift_728x90_atlas_1.png?1667949744138", id:"SB_holiday_gift_728x90_atlas_1"}
+		{src:"images/SB_holiday_gift_728x90_atlas_1.png?1668110898775", id:"SB_holiday_gift_728x90_atlas_1"}
 	],
 	preloads: []
 };

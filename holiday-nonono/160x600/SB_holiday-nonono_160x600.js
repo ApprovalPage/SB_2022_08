@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"SB_holiday_nonono_160x600_atlas_1", frames: [[0,1922,354,76],[286,1825,282,62],[0,1520,290,303],[0,1825,284,95],[0,0,320,1200],[0,1202,371,316]]}
+		{name:"SB_holiday_nonono_160x600_atlas_1", frames: [[0,1942,354,76],[0,1825,290,115],[0,1520,290,303],[292,1520,282,90],[0,0,320,1200],[0,1202,371,316]]}
 ];
 
 
@@ -27,28 +27,28 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_32 = function() {
 	this.initialize(ss["SB_holiday_nonono_160x600_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_31 = function() {
 	this.initialize(ss["SB_holiday_nonono_160x600_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_6 = function() {
+(lib.CachedBmp_30 = function() {
 	this.initialize(ss["SB_holiday_nonono_160x600_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_29 = function() {
 	this.initialize(ss["SB_holiday_nonono_160x600_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
@@ -97,7 +97,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// type
-	this.instance = new lib.CachedBmp_8();
+	this.instance = new lib.CachedBmp_32();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -136,7 +136,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.SB_LOGO, new cjs.Rectangle(-185.5,-158,371,316), null);
 
 
-(lib.LEGAL = function(mode,startPosition,loop,reversed) {
+(lib.LEGALrate = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -148,14 +148,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_7();
+	this.instance = new lib.CachedBmp_31();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.LEGAL, new cjs.Rectangle(0,0,141,31), null);
+}).prototype = getMCSymbolPrototype(lib.LEGALrate, new cjs.Rectangle(0,0,145,57.5), null);
 
 
 (lib.HEAD = function(mode,startPosition,loop,reversed) {
@@ -170,7 +170,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_6();
+	this.instance = new lib.CachedBmp_30();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -192,14 +192,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_5();
+	this.instance = new lib.CachedBmp_29();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(0,0,142,47.5), null);
+}).prototype = getMCSymbolPrototype(lib.CTA, new cjs.Rectangle(0,0,141,45), null);
 
 
 // stage content:
@@ -267,17 +267,17 @@ if (reversed == null) { reversed = false; }
 
 	// LOGO
 	this.instance_3 = new lib.SB_LOGO();
-	this.instance_3.setTransform(103.7,508.15,0.2188,0.2188,0,0,0,0.2,0.2);
+	this.instance_3.setTransform(103.7,498.15,0.2188,0.2188,0,0,0,0.2,0.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(92));
 
 	// LEGAL
-	this.instance_4 = new lib.LEGAL();
-	this.instance_4.setTransform(116.9,591,1,1,0,0,0,102.9,11);
+	this.instance_4 = new lib.LEGALrate();
+	this.instance_4.setTransform(112.9,571,1,1,0,0,0,102.9,11);
 	this.instance_4.alpha = 0;
 	this.instance_4._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(77).to({_off:false},0).to({y:571,alpha:1},10,cjs.Ease.quadOut).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(77).to({_off:false},0).to({y:551,alpha:1},10,cjs.Ease.quadOut).wait(5));
 
 	// BKGD
 	this.instance_5 = new lib.holidaynonono160x6002x();
@@ -288,7 +288,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(79,300,91.1,311);
+p.nominalBounds = new cjs.Rectangle(79,300,91.1,317.5);
 // library properties:
 lib.properties = {
 	id: '0957C5EC3B874C629166840920B09671',
@@ -298,7 +298,7 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/SB_holiday_nonono_160x600_atlas_1.png?1668038022603", id:"SB_holiday_nonono_160x600_atlas_1"}
+		{src:"images/SB_holiday_nonono_160x600_atlas_1.png?1668110983455", id:"SB_holiday_nonono_160x600_atlas_1"}
 	],
 	preloads: []
 };
