@@ -947,8 +947,8 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/SB_holiday_cash_300x600_atlas_P_1.png?1668029352629", id:"SB_holiday_cash_300x600_atlas_P_1"},
-		{src:"images/SB_holiday_cash_300x600_atlas_NP_1.jpg?1668029352629", id:"SB_holiday_cash_300x600_atlas_NP_1"}
+		{src:"images/SB_holiday_cash_300x600_atlas_P_1.png?1668038824444", id:"SB_holiday_cash_300x600_atlas_P_1"},
+		{src:"images/SB_holiday_cash_300x600_atlas_NP_1.jpg?1668038824444", id:"SB_holiday_cash_300x600_atlas_NP_1"}
 	],
 	preloads: []
 };
